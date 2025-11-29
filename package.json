@@ -1,11 +1,14 @@
 {
   "name": "eripi2018-scholarevents",
   "version": "0.0.1",
+  "homepage": "https://github.com/ailtonbsj/eripi2018-scholarevents",
   "description": "Slides da apresentação sobre o ScholarEvents",
   "private": true,
   "scripts": {
     "build": "webpack",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "slides",
@@ -16,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "copy-webpack-plugin": "^13.0.1",
+    "gh-pages": "^6.3.0",
     "reveal.js": "3.6",
     "webpack": "^5.103.0",
     "webpack-cli": "^6.0.1",

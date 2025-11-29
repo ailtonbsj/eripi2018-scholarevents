@@ -3,7 +3,11 @@
 Slides da apresentação sobre o ScholarEvents.
 
 ```bash
-npm i -D webpack webpack-cli webpack-dev-server copy-webpack-plugin reveal.js@3.6 
+# Install dependencies
+npm i -D webpack webpack-cli webpack-dev-server copy-webpack-plugin reveal.js@3.6 gh-pages
+
+# Do deploy on Git Pages
+npm run deploy
 ```
 
 ## Referências
