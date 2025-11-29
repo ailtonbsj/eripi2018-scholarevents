@@ -2,9 +2,10 @@
   "name": "eripi2018-scholarevents",
   "version": "0.0.1",
   "description": "Slides da apresentação sobre o ScholarEvents",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "serve": "webpack-dev-server"
   },
   "keywords": [
     "slides",
@@ -13,7 +14,11 @@
   ],
   "author": "ailtonbsj <ailton.ifce@gmail.com> (https://ailtonbsj.wordpress.com/)",
   "license": "MIT",
-  "dependencies": {
-    "reveal.js": "^3.6.0"
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1",
+    "reveal.js": "3.6",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
